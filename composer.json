@@ -1,0 +1,13 @@
+{
+    "name": "megathorx/lumen-query-parser",
+    "description": "Query parser for lumen (filter, sort, limit and paginate)",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MegaThorx",
+            "email": "megathorx@gmail.com"
+        }
+    ],
+    "require": {}
+}
