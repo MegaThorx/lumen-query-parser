@@ -9,5 +9,15 @@
             "email": "megathorx@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=5.4",
+        "illuminate/support": ">=5.0.0",
+        "illuminate/database": ">=5.0.0",
+        "illuminate/http": ">=5.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LumenQueryParser\\": "src"
+        }
+    }
 }
