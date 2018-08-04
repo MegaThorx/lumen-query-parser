@@ -57,8 +57,11 @@ class Parser
         } elseif ($key === 'page') {
         } elseif ($key === 'relation') {
             // TODO: move it
-            if (in_array($value, $allowedRelations)) {
-                $queryBuilder->with($value);
+            $values = explode(',', $value);
+            foreach ($values as $relationValue) {
+                if (in_array($relationValue, $allowedRelations)) {
+                    $queryBuilder->with($relationValue);
+                }
             }
         } else {
             (new Filter($queryBuilder, $allowedFields, $allowedRelations))->apply($key, $value);
