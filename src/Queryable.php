@@ -2,8 +2,14 @@
 
 namespace LumenQueryParser;
 
+use Illuminate\Database\Query\Builder;
+
 trait Queryable
 {
+    public function querySelf($builder)
+    {
+    }
+
     /**
      * @return array
      */

@@ -28,6 +28,9 @@ class Parser
         $allowedRelations = $model->getQueryableRelations();
         $limits = $model->getQueryableLimit();
 
+
+        $model->querySelf($queryBuilder);
+
         foreach ($allowedRelations as $relation) {
             $related = $model->{$relation}()->getRelated();
             
